@@ -1,0 +1,308 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	list-style-type: none;
+}
+
+body {
+	/* color */
+	color: #FFF;
+	background-color: #000;	
+	/* shape */
+	width: 1000px;
+	margin: auto;
+}
+
+
+/* NAVIGATION */
+#mainnav {
+	/* shape */
+	padding-top: 10px;
+	width: 384px;
+	margin: auto;
+}
+
+	#mainnav ol li{
+		/* shape */
+		display: inline;
+	}
+
+	#mainnav ol li a{
+		/* color */
+		color: #0BF;
+		/* shape */
+		display: inline-block;
+		height: 45px;
+		width: 125px;
+		margin-left: auto;
+		margin-right: auto;
+		/* font */
+		font-family: 'Orbitron', sans-serif;
+		font-size: 20px;
+		text-decoration: none;
+		text-align: center;
+		line-height: 45px;
+		/* positioning */
+		position: relative;
+	}
+
+	#mainnav ol li a:hover, #mainnav ol li a:focus{
+		/* color */
+		color: #FFF;
+		background-color: #0BF;
+		/* animaiton */
+		animation-name: linkhover;
+		animation-duration: 0.25s;
+	}
+
+
+/* HEADER */
+header{
+	/* display */
+	position: relative;
+	/* color */
+	/* shape */
+	width: 900px;
+	height: 235px;
+	margin: auto;
+	margin-top: 5px;
+	/* font */
+	font-family: 'Orbitron', sans-serif;
+	/* making things un selectable */
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+	h1{
+		/* color */
+		color: #FFF;
+		/* shape */
+		padding-top: 15px;
+		padding-right: 25px;
+		/* font */
+	    text-align: right;
+		font-size: 45px;
+	}
+
+	h2{
+		/* shape */
+		padding-top: 10px;
+		padding-right: 25px;
+		/* font */
+		font-size: 15px;
+		font-style: italic;
+		text-align: right;
+	}
+
+
+/* ASIDE */
+aside{
+	/* positioning */
+	display: block;
+	float: left;
+	/* shape */
+	width: 380px;
+	/* color */
+	color: #0BF;
+	/* font */
+	font-family: 'VT323', sans-serif;
+	font-size: 20px;
+}
+
+	aside h4{
+		/* shape */
+		margin-top: 0px;
+	}
+
+	aside p{
+		/* color */
+		color: #FFF;
+		/* shape */
+		margin-bottom: 20px;
+	}
+
+
+/* SECTION */
+section {
+	/* positioning */
+	float: left;
+	/* font */
+	font-family: 'Droid Sans', sans-serif;
+	/* shape */
+	width: 450px;
+	margin-right: 150px;
+}
+
+	h3{
+		/* color */
+		color: #32C4FC;
+		/* font */
+		font-size: 30px;
+		margin-bottom: 5px;
+	}
+
+	h4{
+		/* color */
+		color: #32C4FC;
+		/* shape */
+		margin-top: 15px;
+	}
+
+
+/* FORM */
+form ul{
+	/* shape */
+	padding-bottom: 50px;
+}
+
+	form ul li{
+		/* shape */
+		padding-top: 15px;
+	}
+
+	form ul li label{
+		/* shape */
+		width: 195px;
+		display: inline-block;
+	}
+
+	form ul li input, form ul li textarea{
+		/* shape */
+		width: 200px;
+		resize: none;
+		/* colors */
+		background-color: #0BF;
+		border: 1px solid #FFF;
+	}
+
+	form ul li input:focus, form ul li textarea:focus{
+		/* colors */
+		color: #000;
+		background-color: #FFF;
+		border: 1px solid #0BF;
+	}
+
+	form #buttons{
+		/* shape */
+		width: 255px;
+		margin: auto;
+	}
+
+	form button:hover, form button:focus{
+		/* color */
+		color: #FFF;
+	}
+
+	form fieldset button{
+		/* shape */
+		width: 110px;
+		height: 35px;
+		margin-right: 15px;
+		/* colors */
+		background-color: #32C4FC;
+		border: 3px solid #0080B1;
+		/* font */
+		font-family: 'VT323', sans-serif;
+		font-size: 20px;
+	}
+
+	.error{
+		/* shape */
+		display: none;
+		margin-left: 198px;
+		padding-top: 10px;
+		/* color */
+		color: #FF4F2A;
+		/* font */
+		font-family: 'VT323', sans-serif;
+	}
+
+
+/* FOOTER */	
+footer{
+	/* positioning */
+	clear: both;
+	/* shape */
+	width: 1000px;
+	padding-top: 150px;
+	margin-bottom: 20px;
+	/* color */
+	color: #FFF;
+	/* font */
+	font-family: 'Orbitron', sans-serif;
+	font-size: 12px;
+	text-align: center;
+	line-height: 20px;
+}
+
+	footer ol{
+		/* shape */
+		width: 310px;
+		margin:auto;
+	}
+
+	footer ol li{
+		/* shape */
+		display: inline;
+	}
+
+	footer ol li a{
+		/* color */
+		color: #FFF;
+		/* shape */
+		display: inline-block;
+		height: 20px;
+		width: 100px;
+		margin-left: auto;
+		margin-right: auto;
+		/* positioning */
+		position: relative;
+		/* font */
+		text-decoration: none;
+	}
+
+	footer ol li a:hover, footer ol li a:focus{
+		/* color */
+		color: #0BF;
+	}
+
+	footer p{
+		/* font */
+		font-size: 10px;
+		/* shape */
+		margin: 0px;
+	}
+
+/* ANIMAITONS */
+@keyframes linkhover{
+	from{	color: #0BF;
+			background-color: #000;
+	}
+	to{		color: #FFF;
+			background-color: #0BF;
+	}
+}
